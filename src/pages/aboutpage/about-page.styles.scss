@@ -1,0 +1,76 @@
+.about-page {
+  width: 80%;
+  height: 92vh;
+  margin:0 auto;
+  padding:10px 30px;
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+
+  .about-image {
+    background-image:url("../../assets/about-img.jpg");
+    width: 100%;
+    height: 340px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .title {
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    color: #252525;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .team {
+    display: flex;
+    justify-content: space-between;
+
+    .team-item {
+      width: 20%;
+      height: 240px;
+    }
+
+    .image {
+      margin-bottom: 30px;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      border-radius: 3px;
+      &.member1 { 
+        background-image: url("../../assets/member1.jpg");
+      }
+      &.member2 { 
+        background-image: url("../../assets/member2.jpg");
+      }
+      &.member3 { 
+        background-image: url("../../assets/member3.jpg");
+      }
+      &.member4 { 
+        background-image: url("../../assets/member4.jpg");
+      }
+    }
+
+    .name {
+      margin: 10px 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .job-title {
+      text-align: center;
+      color: #666;
+    }
+  }
+}

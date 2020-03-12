@@ -1,0 +1,35 @@
+.showcase {
+  background-image: url('../../assets/showcase.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 540px;
+
+  padding: 60px;
+  color: white;
+  font-family:'proxima nova','Helvetica','Arial', sans-serif;
+
+  span {
+    font-size: 14px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+
+    span {
+      padding: 2px 0;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+  }
+
+  h2 {
+    font-size: 54px;
+    font-weight: 100;
+    margin: 32px 0;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+}

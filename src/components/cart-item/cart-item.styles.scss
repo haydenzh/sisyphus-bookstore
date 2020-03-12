@@ -1,0 +1,27 @@
+.cart-item {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  font-size: 16px;
+  padding: 0 10px 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+
+  .name {
+    width: 160px;
+    margin: 0 10px;
+  }
+
+  .quantity {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .item-image {
+    width: 48px;
+    height: 56px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

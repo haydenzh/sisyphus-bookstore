@@ -1,0 +1,91 @@
+  .checkout-page {
+    width: 80%;
+    margin:10px auto;
+    padding:20px;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+
+    .empty-massage {
+      p {
+        font-size: 16px;
+        color: #666;
+      }
+      button:hover{
+        background-color:black;
+      }
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: 200;
+      color: #333;
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .checkout {
+      display: flex;
+      flex-direction: column;
+      
+      .checkout-header {
+        display: flex;
+        font-size:14px;
+        color:#666;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;;
+  
+        .image,
+        .product,
+        .price,
+        .quantity,
+        .total {
+          margin-right: 15px;
+        }
+  
+        .image {
+          width: 20%;
+        }
+        .product {
+          width: 30%;
+        }
+        .price,
+        .quantity,
+        .total{
+          width: 15%;
+          text-align: center;
+        }
+        .remove {
+          width:5%;
+          text-align: center;
+        }
+      }
+
+      .checkout-items {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .checkout-footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #4fb74c;
+        margin-bottom: 30px;
+      }
+
+      .checkout-button {
+        align-self: flex-end;
+
+        button:hover{
+          background-color: #4fb74c;
+        }
+      }
+    }
+  }

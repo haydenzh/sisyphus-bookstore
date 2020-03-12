@@ -1,0 +1,45 @@
+$main-color:black;
+$sub-color:white;
+$primary-color:#4fb74c;
+
+.custom-button {
+  min-width: 165px;
+  width: auto;
+  height: 40px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  background-color: $main-color;
+  color:$sub-color;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color:$sub-color; 
+    color: $main-color;
+    border:1px solid $main-color;
+  }
+
+  &.primary-btn {
+    background-color: $primary-color;
+    color: $sub-color;
+    &:hover{
+      background-color: #296927;
+      border: none;
+    }
+  }
+
+  &.inverted {
+    background-color: $sub-color;
+    color: $main-color;
+    border: 1px solid $main-color;
+
+    &:hover {
+      background-color: $main-color;
+      color: $sub-color;
+      border: none;
+    }
+  }
+
+  transition: all 0.3s linear;
+}
