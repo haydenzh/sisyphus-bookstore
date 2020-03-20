@@ -12,7 +12,7 @@ import './category-overview.styles.scss';
 const CategoryOverview = ({ categories }) => {
   return (
   <div className="collection-overview">
-    {categories.map(({id,title,items}) => <CategoryPreview key={id} title={title} description={'See more'} items={items} />)}
+    {categories.map(({title,items}) => <CategoryPreview key={title} title={title} description={'See more'} items={items} />)}
   </div>
 )};
 

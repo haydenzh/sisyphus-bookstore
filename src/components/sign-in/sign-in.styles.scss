@@ -20,3 +20,12 @@
     margin-bottom: 60px;
   }
 }
+
+@media only screen and (max-width:380px){
+  .sign-in {
+    width: 90vw;
+    .custom-button {
+      min-width: 120px;
+    }
+  }
+}

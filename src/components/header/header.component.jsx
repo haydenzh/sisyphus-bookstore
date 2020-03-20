@@ -8,7 +8,6 @@ import { connect } from 'react-redux';
 import { auth } from '../../firebase/firebase.utils';
 
 const Header = ({currentUser,cartHidden}) => {
-  console.log('rendered');
   return (
   <header className="header">
     <Link to="/" className="logo">Sisyphus</Link>
