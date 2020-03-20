@@ -33,3 +33,26 @@
     margin-bottom: 40px;
   }
 }
+
+@media only screen and (max-width:560px) {
+  .showcase {
+    padding:60px 20px;
+    height: 320px;
+    background-position:left;
+
+    h2 {
+      font-size:24px;
+      margin: 24px 0;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 56px;
+    }
+
+    button {
+      min-width: 124px;
+      height: 36px;
+    }
+  }
+}

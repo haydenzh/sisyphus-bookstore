@@ -25,6 +25,18 @@
   .category-items {
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
+  }
+}
+
+@media only screen and (max-width:560px){
+  .category-preview {
+    .title {
+      font-size:20px;
+    }
+  
+    .description {
+      display: none;
+    }
   }
 }

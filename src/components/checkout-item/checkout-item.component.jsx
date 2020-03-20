@@ -9,8 +9,8 @@ const CheckoutItem =({ item,addItem,removeItem,clearItemFromCart }) => {
   const { imageUrl,name,quantity,price } = item; 
   return (
     <div className="checkout-item">
-      <div className="image">
-        <div className="image-container" style={{backgroundImage:`url(${imageUrl})`}}></div>
+      <div className="image-container">
+        <img src={imageUrl} alt="item"/>
       </div>
       <span className="name">{name}</span>
       <span className="price">${price}</span>

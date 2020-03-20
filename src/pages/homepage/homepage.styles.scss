@@ -5,10 +5,18 @@
   
   .directory-container {
     margin:30px 0;
-    height: 435px;
+    height: 480px;
   }
 
   .category-preview-container .category-preview .title {
     pointer-events: none;
+  }
+}
+
+@media only screen and (max-width:560px){
+  .home-page {
+    .directory-container {
+      margin:10px 0;
+    }
   }
 }

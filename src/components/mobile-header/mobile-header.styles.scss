@@ -1,0 +1,25 @@
+.mobile-header {
+  max-width: 560px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4fb74c;
+  position: relative;
+
+  .mobile-menu-button {
+    font-size:24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .logo {
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: white;
+  }
+}

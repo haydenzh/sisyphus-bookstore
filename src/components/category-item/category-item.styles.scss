@@ -6,6 +6,7 @@
   padding: 3px 3px 10px 3px;
   width: 260px;
   height: 480px;
+  margin:10px;
 
   .item-image {
     width:100%;
@@ -40,5 +41,16 @@
       color: #4fb74c;
     }
 
+  }
+}
+
+@media only screen and (max-width:560px){
+  .category-item {
+    width: 46%;
+    margin: 10px 0;
+
+    .custom-button {
+      min-width: 80%;
+    }
   }
 }

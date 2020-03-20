@@ -19,6 +19,8 @@ import { dataFectchStartAsync } from './redux/shop/shop.actions';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from './redux/user/user.selector';
 import { selectIsDataLoading } from './redux/shop/shop.selector';
+import MobileHeader from './components/mobile-header/mobile-header.component';
+import HeaderContainer from './components/header-container/header-container.component';
 
 class App extends React.Component {
 
@@ -39,7 +41,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="container">
-          <Header />
+          <HeaderContainer />
             <Switch>
               <Route exact path="/" render={props => <HomePage isLoading={this.props.isLoading} {...props}/>} />
               <Route path="/shop" component={ShopPage} />

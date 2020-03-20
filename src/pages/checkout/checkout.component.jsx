@@ -10,35 +10,38 @@ import { withRouter } from 'react-router-dom';
 import { createStructuredSelector } from 'reselect';
 import StripeCheckoutButton from '../../components/stripe/stripe-checkout.component';
 
+const renderCheckoutContent = (cartItems,cartItemsTotal) => (
+    <div className="checkout">
+      <div className="checkout-header">
+        <span className="image"></span>
+        <span className="product">Product</span>
+        <span className="price">Price</span>
+        <span className="quantity">Quantity</span>
+        <span className="total">Total</span>
+        <span className="remove">Remove</span>
+      </div>
+      <div className="checkout-items">
+        {cartItems.map(item => <CheckoutItem key={item.id} item={item}/>)}
+      </div>
+      <div className="checkout-footer"><span>Total:${cartItemsTotal.toFixed(2)}</span></div>
+      <div className="checkout-button">
+        <StripeCheckoutButton price={cartItemsTotal}/>
+      </div>
+  </div>
+);
+
+const renderEmptyMessage = (history) => (
+  <div className="empty-massage">
+    <p>Your cart is empty</p>
+    <CustomButton className="primary-btn" onClick={() => history.push('/shop')}>Return to Shop</CustomButton>
+  </div>
+);
+
 const CheckoutPage = ({cartItems,cartItemsTotal,history}) => (
     <div className="checkout-page">
       <h2 className="title">Cart</h2>
-      {cartItems.length ? 
-        <div className="checkout">
-          <div className="checkout-header">
-            <span className="image"></span>
-            <span className="product">Product</span>
-            <span className="price">Price</span>
-            <span className="quantity">Quantity</span>
-            <span className="total">Total</span>
-            <span className="remove">Remove</span>
-          </div>
-          <div className="checkout-items">
-            {cartItems.map(item => <CheckoutItem key={item.id} item={item}/>)}
-          </div>
-          <div className="checkout-footer"><span>Total:${cartItemsTotal.toFixed(2)}</span></div>
-          <div className="checkout-button">
-            <StripeCheckoutButton price={cartItemsTotal}/>
-          </div>
-        </div>
-        : 
-        <div className="empty-massage">
-          <p>Your cart is empty</p>
-          <CustomButton className="primary-btn" onClick={() => history.push('/shop')}>Return to Shop</CustomButton>
-        </div>
-      }
+      { cartItems.length ? renderCheckoutContent(cartItems,cartItemsTotal) :  renderEmptyMessage(history) }
     </div>
- 
 );
 
 const mapStateToProps = createStructuredSelector({

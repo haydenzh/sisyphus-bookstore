@@ -24,3 +24,10 @@
     overflow: auto;
   }
 }
+
+@media only screen and (max-width:560px){
+  .cart-dropdown {
+    top:65px;
+    width: 100%;
+  }
+}

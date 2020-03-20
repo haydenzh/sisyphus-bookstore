@@ -1,5 +1,5 @@
   .checkout-page {
-    width: 80%;
+    width: 100%;
     margin:10px auto;
     padding:20px;
     background-color: white;
@@ -36,30 +36,22 @@
         font-size:14px;
         color:#666;
         padding-bottom: 10px;
-        border-bottom: 1px solid #ddd;;
-  
-        .image,
-        .product,
-        .price,
-        .quantity,
-        .total {
-          margin-right: 15px;
-        }
+        border-bottom: 1px solid #ddd;
   
         .image {
-          width: 20%;
+          width: 18vw;
         }
         .product {
-          width: 30%;
+          width:30vw;
         }
         .price,
         .quantity,
         .total{
-          width: 15%;
+          width: 12vw;
           text-align: center;
         }
         .remove {
-          width:5%;
+          width:6vw;
           text-align: center;
         }
       }
@@ -85,6 +77,30 @@
 
         button:hover{
           background-color: #4fb74c;
+        }
+      }
+    }
+  }
+
+
+  @media only screen and (max-width:560px){
+    .checkout-page{
+      .checkout{
+        .checkout-header {
+          .image {
+            display: none;
+          }
+          .product {
+            width: 22vw;
+          }
+          .price,
+          .quantity,
+          .total{
+            width: 20vw;
+          }
+          .remove {
+            width:12vw;
+          }
         }
       }
     }
