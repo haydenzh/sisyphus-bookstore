@@ -9,7 +9,6 @@ import { auth } from './firebase/firebase.utils';
 
 import { setCurrentUser } from './redux/user/user.actions';
 
-import Header from './components/header/header.component';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import AboutPage from './pages/aboutpage/about-page.component';
@@ -19,7 +18,6 @@ import { dataFectchStartAsync } from './redux/shop/shop.actions';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from './redux/user/user.selector';
 import { selectIsDataLoading } from './redux/shop/shop.selector';
-import MobileHeader from './components/mobile-header/mobile-header.component';
 import HeaderContainer from './components/header-container/header-container.component';
 
 class App extends React.Component {
