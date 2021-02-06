@@ -8,8 +8,6 @@ import './category-page.styles.scss';
 import CategoryItem from '../../components/category-item/category-item.component';
 
 const CategoryPage = ({ category }) => {
-  
-  console.log(category);
   if(!category){
     return <div>Loading...</div>
   }
@@ -24,7 +22,6 @@ const CategoryPage = ({ category }) => {
 
 const mapStateToProps = (state,ownProps) => {
   const id = ownProps.match.params.categoryId;
-  console.log(ownProps);
   return {
     category:selectCategoryById(id)(state)
   }
